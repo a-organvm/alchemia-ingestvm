@@ -13,8 +13,14 @@ from alchemia.aesthetic import format_prompt_injection, load_taste, resolve_aest
 
 # Canonical organ metadata for synthesis — names and domains for creative briefs
 _ORGAN_NAMES = {
-    "I": "Theoria", "II": "Poiesis", "III": "Ergon", "IV": "Taxis",
-    "V": "Logos", "VI": "Koinonia", "VII": "Kerygma", "META": "Meta-Organvm",
+    "I": "Theoria",
+    "II": "Poiesis",
+    "III": "Ergon",
+    "IV": "Taxis",
+    "V": "Logos",
+    "VI": "Koinonia",
+    "VII": "Kerygma",
+    "META": "Meta-Organvm",
 }
 _ORGAN_DOMAINS = {
     "I": "Theory, epistemology, recursion, ontology",
@@ -41,7 +47,8 @@ try:
 except ImportError:
     ORGAN_MAP = {
         f"ORGAN-{k}" if k != "META" else "META-ORGANVM": {
-            "name": _ORGAN_NAMES[k], "domain": _ORGAN_DOMAINS[k],
+            "name": _ORGAN_NAMES[k],
+            "domain": _ORGAN_DOMAINS[k],
         }
         for k in _ORGAN_NAMES
     }
