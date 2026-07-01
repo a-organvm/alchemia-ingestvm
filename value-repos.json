@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "description": "Repos promoted into the ranked value tier - discovered to hold concrete, build-out-worthy latent value.",
+  "ranked": [
+    {
+      "repo": "organvm/alchemia-ingestvm",
+      "promoted": "2026-07-01",
+      "source": "auto-discovery",
+      "tier": "infrastructure",
+      "value": "Source-material refinery for converting scattered workspace files, notes, bookmarks, Google Docs, AI chat transcripts, screenshots, and manifest metadata into classified artifacts, deployment manifests, provenance records, creative briefs, and reusable aesthetic prompt context.",
+      "first_task": "Add a read-only `alchemia report` command that runs or consumes intake/absorb data and emits Markdown plus JSON summaries of ranked target repos, deployable/reference/skipped files, pending-review items, duplicate clusters, and provenance coverage without calling `gh`.",
+      "thesis": "DISCOVERY.md"
+    }
+  ]
+}
